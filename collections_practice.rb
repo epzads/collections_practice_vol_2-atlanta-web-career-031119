@@ -63,16 +63,17 @@ return array
 end
 
 def count_elements(array)
-counter = 0 
+
 array.uniq.each do |x| 
- 
+counter = 0  
 array.each do |y|
   
   if y == x 
      counter += 1 
  end 
- x[:count] = counter
+ 
 end 
+x[:count] = counter
 end 
 end 
 
